@@ -394,6 +394,7 @@ header {
   border: none;
   border-radius: 25px;
   font-size: 20px;
+  cursor: pointer;
 }
 .car button:nth-child(4) {
   left: 45%;
@@ -425,6 +426,10 @@ header {
 .near h1 {
   font-size: 13px;
   margin-bottom: 10px;
+}
+.near a {
+  color: black;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1280px) {

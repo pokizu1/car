@@ -144,8 +144,8 @@ body {
 }
 
 .huge {
-  background: url(https://s3-alpha-sig.figma.com/img/0cfd/2305/7c8247adee7adbea0f040e4cd1ecab6f?Expires=1680480000&Signature=THJgA4UP9Q97R0hCAOf63UE9LuzCY6x-fApA7hBIi2iPjlzFO-DmPBpfsyTx20fN5y~2pZ3~tGpQKd6jos3ss-ivGFPT9-FThc8b9~5OxGv6gpzgskqlt81K~ELMvoVOiX8skRG~ZQVNeIR7Dai5Yt2C4n3GXbjNNO6vWf9p0Ze95LDrxy9EVR2P6Yx~NZM6ndPMff~-8-o6Vl7ntGVBuURpsugzbVy8ZFyWM7Oq2UlHyL1mhthFCIAwYCzXG60WdLIRVISNRUnshBuGR03kzaig0QFuPtMA6ONVH6aqz6HfKMi9EyP1v3baKtg1njgvVGQzBcK7PuimXhkKlObU~Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
-  background-size: 1000px;
+  background: url(https://images.dealer.com/ddc/vehicles/2023/Audi/RS%20e-tron%20GT/Sedan/trim_Base_e09a22/color/Ibis%20White-T9T9-240%2C240%2C238-640-en_US.jpg);
+  background-size: 700px;
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: bottom;
@@ -198,12 +198,12 @@ body {
 }
 @media screen and (max-width: 1450px) {
   .huge {
-    background-size: 800px;
+    background-size: 500px;
   }
 }
 @media screen and (max-width: 1250px) {
   .huge {
-    background-size: 700px;
+    background-size: 400px;
   }
 }
 @media screen and (max-width: 1198px) {
@@ -382,6 +382,10 @@ p {
 
 .near {
   margin-top: 170px;
+}
+.near a {
+  color: black;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 900px) {
