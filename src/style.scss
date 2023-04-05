@@ -1,0 +1,500 @@
+*{
+margin-inline-end: 0;
+margin-inline-start: 0;
+padding: 0;
+margin: 0;
+}
+
+::-webkit-scrollbar{
+display: none;
+}
+
+
+body{
+font-family: sans-serif;
+
+}
+
+header{
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0.5,0,0,0.5) 70%), url(https://www.tuningblog.eu/wp-content/uploads/2021/02/Audi-e-tron-GT-quattro-Audi-RS-e-tron-GT-Tuning-19.jpg?ezimgfmt=ngcb2/notWebP);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 100%;
+height: 900px; 
+
+}
+
+.navbar{
+
+display: flex;
+width: 100%;
+justify-content: end;
+gap: 50px;
+
+img{
+display: block;
+right: auto;
+position: relative;
+width: 167px;
+margin-top: 40px;
+margin-left: 123px;
+height: 94;
+margin-right: auto;
+}
+h2{
+
+margin-top: 65px;
+font-weight: lighter;
+font-size: 20px;
+
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+
+h3{
+margin-right: 155px;
+margin-top: 65px;
+font-weight: lighter;
+font-size: 20px;
+}
+
+h1{
+margin-top: 65px;
+font-weight: lighter;
+font-size: 20px;
+
+}
+
+:nth-child(1):hover{
+
+color: rgb(231, 231, 231);
+
+}
+
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 1;
+  background-color: rgb(48, 48, 48);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+  
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+ 
+}
+
+.sidepanel a:hover {
+  color: #cecece;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+    display: none;
+    margin-top: 40px;
+    margin-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+background: none;
+border: none;
+font-size: 30px;
+
+}
+
+
+.price{
+margin-left: 120px;
+
+h1{
+
+font-size: 32px;
+padding-top: 125px ;
+color: white;
+}
+h2{
+margin-top: 10px;
+color: white;
+font-size: 20px;
+font-weight: lighter;
+}
+
+button:nth-child(3){
+background-color: white;
+border: none;
+padding: 28px 40px;
+border-radius: 30px;
+font-size: 20px;
+font-weight: bolder;
+margin-top: 20px;
+cursor: pointer;
+}
+
+button:nth-child(4){
+cursor: pointer;
+background: none;
+border: white solid 2px;
+color: white;
+padding: 28px 40px;
+border-radius: 30px;
+font-size: 20px;
+font-weight: bolder;
+
+}
+}
+
+@media screen and (max-width:1000px) {
+
+.navbar{
+h1{display: none;}
+h3{display: none;}
+h2{display: none;}
+gap: 0;
+img{margin-left: 23px;}}
+.openbtn{display: block;}
+.price{margin-left: 20px;}
+
+}
+@media screen and (max-width:550px) {
+.price{
+button:nth-child(4){margin-top: 10px;}}}
+
+.boosts{
+
+display: flex;
+justify-content: space-around;
+gap: 10px;
+width: 100%;
+flex-wrap: wrap;
+
+}
+.boost{
+text-align: center;
+h1{
+font-size: 32px;
+font-weight: 550;
+margin-top: 20px;
+}
+h2{
+margin-top: 20px;
+font-size: 20px;
+font-weight: normal;
+}
+h3{
+margin-top: 20px;
+font-size: 16px;
+font-weight: lighter;
+}
+
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 200px;
+  
+  img{
+  height: 1000px;
+z-index: -1;
+}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: auto;
+  padding: 460px  50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.473);
+  font-weight: bold;
+  font-size: 60px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 24px;
+  max-width: 100%;
+  position: absolute;
+  left: 8%;
+  top: 92px;
+  width: 488px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  bottom: 100px;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+@media screen and (max-width:1750px) {
+.numbertext{left: 15%;}
+}
+
+@media screen and (max-width:1200px) {
+.slideshow-container{img{height: 800px;}}
+.prev, .next {padding:360px 50px ;}
+
+}
+
+@media screen and (max-width:1000px) {
+.slideshow-container{img{height: 500px;}}
+.prev, .next {padding:210px 50px ;}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  max-width: 100%;
+  position: absolute;
+  left: 20%;
+  top: 20px;
+  width: 288px;
+}
+}
+@media screen and (max-width:700px) {
+  .slideshow-container{img{height: 350px;}}
+  .prev, .next {padding:135px 30px ;}
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    max-width: 100%;
+    position: absolute;
+    left: 19%;
+    top: 20px;
+    width: 288px;
+  }
+  .dot{
+  width: 15px;
+  height: 15px;
+  bottom: 70px;
+  }
+  }
+
+
+
+   @media screen and (max-width:500px) {
+  .slideshow-container{margin-top: 100px; img{height: 200px;}}
+  .prev, .next {padding:60px 10px ;}
+  .numbertext {
+   display: none;
+  }
+  .dot{
+  width: 10px;
+  height: 10px;
+  bottom: 50px;
+  }
+  }
+
+     @media screen and (max-width:300px) {
+  .slideshow-container{margin-top: 100px; img{height: 200px;}}
+  .prev, .next {padding:92px 10px ;}
+  .numbertext {
+   display: none;
+  }
+  .dot{
+  width: 10px;
+  height: 10px;
+  bottom: 50px;
+  }
+  }
+
+.car{
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+h1{
+text-align: center;
+font-size: 72px;
+font-weight: 500;
+position: relative;
+top: 100px;
+}
+
+button:nth-child(3){
+position: relative;
+bottom: 100px;
+left: 40%;
+transform: translate(-40%);
+color: white;
+background-color: rgb(0, 0, 0);
+padding: 28px 40px;
+border: none;
+border-radius: 25px;
+font-size: 20px;
+}
+button:nth-child(4){
+  left: 45%;
+transform: translate(-45%);
+color: white;
+background-color: rgb(0, 0, 0);
+padding: 28px 40px;
+border: none;
+border-radius: 25px;
+font-size: 20px;
+position: relative;
+bottom: 100px;
+}
+
+}
+
+
+
+
+.near{
+margin-top:1000px ;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+img{width: 160px;}
+h2{
+width: 360px;
+font-size: 13px;
+margin-bottom: 20px;
+}
+h1{
+font-size: 13px;
+margin-bottom: 10px;
+}
+
+}
+@media screen and (max-width:1280px) {
+.car{img{width: 900px;}
+h1{font-size: 50px;}
+  
+}
+.near{
+margin-top: 800px;
+}
+}
+@media screen and (max-width:900px) {
+.car{img{width: 500px;}
+h1{font-size: 30px;
+top: 50px;
+}
+button:nth-child(3){
+bottom: 50px;
+left: 30%;
+transform: translate(-30%);
+}
+button:nth-child(4){
+bottom: 50px;
+left: 35%;
+transform: translate(-35%);
+}
+}
+.near{
+margin-top: 500px;
+}
+}
+@media screen and (max-width:550px) {
+  .slideshow-container{margin-top: 100px; img{height: 250px;}}
+  .prev, .next {padding:85px 30px ;}
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 9px;
+    max-width: 100%;
+    position: absolute;
+    left: 19%;
+    top: 20px;
+    width: 288px;
+  }
+  .dot{
+  width: 15px;
+  height: 15px;
+  bottom: 70px;
+  }
+  .car{img{width: 300px;}
+  h1{font-size: 16px;
+  top: 30px;
+  }
+  button:nth-child(3){
+    padding: 13px 20px;
+    font-size: 16px;
+    left: 20%;
+transform: translate(-20%);
+  }
+  button:nth-child(4){
+    padding: 13px 20px;
+    font-size: 16px;
+    left: 25%;
+transform: translate(-25%);
+  }
+  }
+  .near{
+    margin-top: 300px;
+    }
+  }
+  @media screen and (max-width:330px) {
+  .car{
+    button:nth-child(4){
+      font-size: 13px;
+  }
+  button:nth-child(3){
+    font-size: 13px;
+}
+img{width: 275px;}
+  }
+
+  }
